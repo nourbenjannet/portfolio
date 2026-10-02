@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nour Ben Jannet | Portfolio - Mécatronique Industrielle</title>
+    <meta name="description" content="Portfolio de Nour Ben Jannet, étudiante en 3ème année de Licence en Mécatronique Industrielle à l'ISSAT Sousse. Conception CAO (CSWA), Automatisme Siemens, Robotique.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-symbol">&lt;NBJ/&gt;</span>
+                <span class="logo-text">Nour Ben Jannet</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#experience" class="nav-link">Expériences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#education" class="nav-link">Formations</a>
+                <a href="#contact" class="nav-link nav-btn-contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Changer de thème">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Menu mobile">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span>
+                        À la recherche d'un PFE / Stage & Opportunités Industrielles
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Bonjour, je suis <br>
+                        <span class="gradient-text">Nour Ben Jannet</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Étudiante en <strong>3<sup>ème</sup> année de Licence en Mécatronique Industrielle</strong> à l'<strong>ISSAT Sousse</strong>. Passionnée par la conception mécanique CAO, l'automatisme industriel et l'intégration robotique.
+                    </p>
+
+                    <div class="hero-highlights">
+                        <div class="hero-chip">
+                            <i data-lucide="award"></i> Certifiée SolidWorks (CSWA)
+                        </div>
+                        <div class="hero-chip">
+                            <i data-lucide="cpu"></i> Automatisme Siemens (TIA Portal)
+                        </div>
+                        <div class="hero-chip">
+                            <i data-lucide="bot"></i> Robotique & Arduino
+                        </div>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-primary">
+                            <i data-lucide="mail"></i> Me contacter
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i data-lucide="folder-code"></i> Découvrir mes projets
+                        </a>
+                        <button onclick="window.print()" class="btn btn-outline" title="Imprimer ou enregistrer en PDF">
+                            <i data-lucide="printer"></i> Imprimer / PDF
+                        </button>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span class="meta-item"><i data-lucide="map-pin"></i> Sousse, Tunisie</span>
+                        <span class="meta-divider">•</span>
+                        <a href="mailto:nourbenjannet02@gmail.com" class="meta-item"><i data-lucide="at-sign"></i> nourbenjannet02@gmail.com</a>
+                        <span class="meta-divider">•</span>
+                        <a href="tel:+21654920085" class="meta-item"><i data-lucide="phone"></i> +216 54 920 085</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-card">
+                        <div class="avatar-inner">
+                            <div class="avatar-icon-wrapper">
+                                <i data-lucide="cog" class="spin-slow"></i>
+                            </div>
+                            <div class="avatar-initials">NBJ</div>
+                            <div class="avatar-role">Mécatronique Industrielle</div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="floating-badge badge-top-right">
+                            <i data-lucide="check-circle-2"></i>
+                            <span>SolidWorks CSWA</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-left">
+                            <i data-lucide="sliders"></i>
+                            <span>Siemens TIA Portal</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-right">
+                            <i data-lucide="wrench"></i>
+                            <span>Lean & Maintenance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Profil</span>
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p class="section-desc">Une formation pluridisciplinaire au carrefour de la mécanique, de l'automatisme et de l'électronique.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-card">
+                        <h3 class="about-card-title">
+                            <i data-lucide="user-check"></i> Mon Parcours & Ambitions
+                        </h3>
+                        <p>
+                            Actuellement en <strong>3<sup>ème</sup> année de Licence en Mécatronique Industrielle à l'ISSAT Sousse</strong>, j'ai développé une solide maîtrise de la conception mécanique assistée par ordinateur (CAO) sous <strong>SolidWorks (certifiée CSWA)</strong> ainsi que des notions de <strong>CATIA</strong>.
+                        </p>
+                        <p>
+                            Mon cursus m'a permis d'acquérir une double compétence indispensable dans l'industrie 4.0 : la maîtrise des systèmes mécaniques et leur pilotage via l'automatisme industriel (<strong>Siemens TIA Portal</strong>) et les systèmes embarqués (<strong>Arduino</strong>).
+                        </p>
+                        <p>
+                            Sérieuse, rigoureuse et persévérante, je suis animée par le challenge technique : <strong>la conception de machines spéciales</strong>, <strong>l'intégration de robots industriels</strong> et <strong>l'optimisation de la maintenance industrielle</strong> selon les principes du Lean Management.
+                        </p>
+
+                        <div class="key-facts-grid">
+                            <div class="fact-box">
+                                <span class="fact-number">3<sup>ème</sup></span>
+                                <span class="fact-label">Année de Licence (ISSAT Sousse)</span>
+                            </div>
+                            <div class="fact-box">
+                                <span class="fact-number">CSWA</span>
+                                <span class="fact-label">Certification Officielle SolidWorks</span>
+                            </div>
+                            <div class="fact-box">
+                                <span class="fact-number">2+</span>
+                                <span class="fact-label">Stages Industriels majeurs</span>
+                            </div>
+                            <div class="fact-box">
+                                <span class="fact-number">3</span>
+                                <span class="fact-label">Langues maîtrisées</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-side-cards">
+                        <!-- Associative Life Card -->
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="icon-circle icon-red">
+                                    <i data-lucide="heart-handshake"></i>
+                                </div>
+                                <div>
+                                    <h4>Vie Associative & Bénévolat</h4>
+                                    <span>Engagement citoyen et travail collaboratif</span>
+                                </div>
+                            </div>
+                            <ul class="associative-list">
+                                <li>
+                                    <strong>Club Croissant-Rouge – ISSAT Sousse</strong>
+                                    <p>Engagement humanitaire, actions bénévoles, organisation d'événements de sensibilisation et secourisme.</p>
+                                </li>
+                                <li>
+                                    <strong>Club de Robotique – Polytechnique</strong>
+                                    <p>Participation aux ateliers techniques, conception de mécanismes robotisés et esprit d'équipe compétitif.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Languages Card -->
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="icon-circle icon-blue">
+                                    <i data-lucide="languages"></i>
+                                </div>
+                                <div>
+                                    <h4>Compétences Linguistiques</h4>
+                                    <span>Communication multiculturelle</span>
+                                </div>
+                            </div>
+                            <div class="languages-bars">
+                                <div class="lang-item">
+                                    <div class="lang-info">
+                                        <span>Arabe</span>
+                                        <span class="lang-level">Langue Maternelle</span>
+                                    </div>
+                                    <div class="progress-track"><div class="progress-fill" style="width: 100%;"></div></div>
+                                </div>
+                                <div class="lang-item">
+                                    <div class="lang-info">
+                                        <span>Français</span>
+                                        <span class="lang-level">Bon niveau (Courant / Professionnel)</span>
+                                    </div>
+                                    <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+                                </div>
+                                <div class="lang-item">
+                                    <div class="lang-info">
+                                        <span>Anglais</span>
+                                        <span class="lang-level">Bon niveau (Technique / Professionnel)</span>
+                                    </div>
+                                    <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section with Categories/Sections -->
+        <section id="skills" class="section section-darker">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Expertises</span>
+                    <h2 class="section-title">Mes Compétences</h2>
+                    <p class="section-desc">Un ensemble de compétences techniques et méthodologiques réparties par domaines d'application industrielle.</p>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div class="skills-filter-nav">
+                    <button class="filter-btn active" data-filter="all">Toutes</button>
+                    <button class="filter-btn" data-filter="cao">CAO & Conception</button>
+                    <button class="filter-btn" data-filter="auto">Automatisme & Robotique</button>
+                    <button class="filter-btn" data-filter="maint">Maintenance & Lean</button>
+                    <button class="filter-btn" data-filter="soft">Compétences Personnelles</button>
+                    <button class="filter-btn" data-filter="tools">Bureautique</button>
+                </div>
+
+                <div class="skills-categories-wrapper">
+                    <!-- SECTION 1: Conception & CAO -->
+                    <div class="skill-category-block" data-category="cao">
+                        <div class="category-header">
+                            <div class="cat-icon-box cat-icon-primary">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Conception Mécanique & Modélisation CAO</h3>
+                                <p class="category-subtitle">Modélisation 3D, mise en plan, calculs d'assemblages et cotation fonctionnelle</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-card featured-skill">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="box"></i>
+                                        <h4>SolidWorks</h4>
+                                    </div>
+                                    <span class="badge-certif"><i data-lucide="shield-check"></i> Certifié CSWA</span>
+                                </div>
+                                <p class="skill-desc">Modélisation de pièces complexes, assemblages cinématiques, mise en plan normalisée, tôlerie et mécano-soudé.</p>
+                                <div class="skill-tags">
+                                    <span>CSWA</span>
+                                    <span>Pièces 3D</span>
+                                    <span>Assemblages</span>
+                                    <span>Plans 2D</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="compass"></i>
+                                        <h4>CATIA</h4>
+                                    </div>
+                                    <span class="level-indicator">Notions & Fondations</span>
+                                </div>
+                                <p class="skill-desc">Initiation aux modules Part Design, Assembly Design et modélisation surfacique en cours de licence.</p>
+                                <div class="skill-tags">
+                                    <span>Part Design</span>
+                                    <span>Assembly</span>
+                                    <span>Modélisation</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="file-spreadsheet"></i>
+                                        <h4>Mise en plan & Cotation</h4>
+                                    </div>
+                                    <span class="level-indicator">Avancé</span>
+                                </div>
+                                <p class="skill-desc">Tolérancement géométrique et dimensionnel (GPS), chaînes de cotes et normes de dessin industriel.</p>
+                                <div class="skill-tags">
+                                    <span>Tolérancement</span>
+                                    <span>ISO-GPS</span>
+                                    <span>Dessin Industriel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 2: Automatisme & Robotique -->
+                    <div class="skill-category-block" data-category="auto">
+                        <div class="category-header">
+                            <div class="cat-icon-box cat-icon-cyan">
+                                <i data-lucide="cpu"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Automatisme Industriel & Robotique</h3>
+                                <p class="category-subtitle">Programmation d'automates programmables, capteurs, actionneurs et systèmes embarqués</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-card featured-skill">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="sliders"></i>
+                                        <h4>Siemens TIA Portal</h4>
+                                    </div>
+                                    <span class="badge-certif"><i data-lucide="check"></i> Formée</span>
+                                </div>
+                                <p class="skill-desc">Programmation des automates Siemens (S7-1200 / S7-300), Grafcet, Ladder (LAD), blocs fonctionnels et IHM.</p>
+                                <div class="skill-tags">
+                                    <span>Siemens S7</span>
+                                    <span>LAD / Ladder</span>
+                                    <span>Grafcet</span>
+                                    <span>HMI / IHM</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="bot"></i>
+                                        <h4>Robotique & Arduino</h4>
+                                    </div>
+                                    <span class="badge-certif"><i data-lucide="check"></i> Formée</span>
+                                </div>
+                                <p class="skill-desc">Programmation C/C++ embarqué sur microcontrôleurs, interfaçage capteurs (ultrasons, optique, etc.) et pilotage de moteurs (CC, Pas-à-Pas, Servomoteurs).</p>
+                                <div class="skill-tags">
+                                    <span>Arduino</span>
+                                    <span>Microcontrôleurs</span>
+                                    <span>Servomoteurs</span>
+                                    <span>Capteurs</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="zap"></i>
+                                        <h4>Actionneurs & Pneumatique</h4>
+                                    </div>
+                                    <span class="level-indicator">Pratique</span>
+                                </div>
+                                <p class="skill-desc">Intégration d'actionneurs pneumatiques, vérins, distributeurs, électrovannes et relais de commande industrielle.</p>
+                                <div class="skill-tags">
+                                    <span>Pneumatique</span>
+                                    <span>Électrovannes</span>
+                                    <span>Relais</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 3: Maintenance & Organisation Industrielle -->
+                    <div class="skill-category-block" data-category="maint">
+                        <div class="category-header">
+                            <div class="cat-icon-box cat-icon-green">
+                                <i data-lucide="wrench"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Maintenance Industrielle & Lean Management</h3>
+                                <p class="category-subtitle">Disponibilité des équipements, méthodes d'amélioration continue et de sûreté de fonctionnement</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="activity"></i>
+                                        <h4>Maintenance Industrielle</h4>
+                                    </div>
+                                    <span class="level-indicator">Terrain</span>
+                                </div>
+                                <p class="skill-desc">Observation et suivi des interventions préventives et curatives, diagnostic de pannes mécaniques et électriques sur machines de production.</p>
+                                <div class="skill-tags">
+                                    <span>Préventive</span>
+                                    <span>Corrective</span>
+                                    <span>Diagnostic</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card featured-skill">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="git-merge"></i>
+                                        <h4>Lean Basic</h4>
+                                    </div>
+                                    <span class="badge-certif"><i data-lucide="check"></i> Formée</span>
+                                </div>
+                                <p class="skill-desc">Sensibilisation à l'élimination des gaspillages (Muda), démarche 5S, optimisation des flux de production et amélioration continue (Kaizen).</p>
+                                <div class="skill-tags">
+                                    <span>5S</span>
+                                    <span>Kaizen</span>
+                                    <span>Élimination Gaspillage</span>
+                                    <span>Flux Industriels</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="shield-alert"></i>
+                                        <h4>Sécurité Industrielle (HSE)</h4>
+                                    </div>
+                                    <span class="level-indicator">Strict Respect</span>
+                                </div>
+                                <p class="skill-desc">Application rigoureuse des consignes de sécurité en atelier, port des EPI, procédures de consignation et sensibilisation environnementale.</p>
+                                <div class="skill-tags">
+                                    <span>EPI</span>
+                                    <span>Consignation</span>
+                                    <span>Normes Atelier</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 4: Compétences Personnelles (Soft Skills) -->
+                    <div class="skill-category-block" data-category="soft">
+                        <div class="category-header">
+                            <div class="cat-icon-box cat-icon-purple">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Compétences Personnelles & Humaines (Soft Skills)</h3>
+                                <p class="category-subtitle">Qualités relationnelles et méthodologiques essentielles au travail d'ingénierie collaborative</p>
+                            </div>
+                        </div>
+
+                        <div class="soft-skills-grid">
+                            <div class="soft-card">
+                                <div class="soft-icon"><i data-lucide="search"></i></div>
+                                <h4>Esprit d'analyse</h4>
+                                <p>Capacité à décomposer un problème mécanique ou automatisé complexe en éléments simples pour en identifier la cause racine.</p>
+                            </div>
+
+                            <div class="soft-card">
+                                <div class="soft-icon"><i data-lucide="target"></i></div>
+                                <h4>Résolution de problèmes</h4>
+                                <p>Approche pragmatique, méthodique et orientée solutions éprouvées face aux aléas de production.</p>
+                            </div>
+
+                            <div class="soft-card">
+                                <div class="soft-icon"><i data-lucide="users"></i></div>
+                                <h4>Travail d'équipe</h4>
+                                <p>Excellente synergie avec les opérateurs, techniciens et ingénieurs de maintenance et de production.</p>
+                            </div>
+
+                            <div class="soft-card">
+                                <div class="soft-icon"><i data-lucide="calendar-check"></i></div>
+                                <h4>Organisation des tâches</h4>
+                                <p>Planification rigoureuse, hiérarchisation des priorités et respect scrupuleux des délais et cahiers des charges.</p>
+                            </div>
+
+                            <div class="soft-card">
+                                <div class="soft-icon"><i data-lucide="lightbulb"></i></div>
+                                <h4>Créativité technique</h4>
+                                <p>Ingéniosité dans la conception de solutions mécaniques compactes, fiables et économiques.</p>
+                            </div>
+
+                            <div class="soft-card">
+                                <div class="soft-icon"><i data-lucide="refresh-cw"></i></div>
+                                <h4>Adaptabilité & Persévérance</h4>
+                                <p>Capacité d'apprentissage rapide face aux nouveaux logiciels, technologies et environnements d'usine.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 5: Bureautique & Outils Informatiques -->
+                    <div class="skill-category-block" data-category="tools">
+                        <div class="category-header">
+                            <div class="cat-icon-box cat-icon-amber">
+                                <i data-lucide="monitor"></i>
+                            </div>
+                            <div>
+                                <h3 class="category-title">Outils Informatiques & Bureautique</h3>
+                                <p class="category-subtitle">Rédaction de rapports techniques, analyse de données et présentations de projets</p>
+                            </div>
+                        </div>
+
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="file-spreadsheet"></i>
+                                        <h4>Microsoft Excel</h4>
+                                    </div>
+                                    <span class="level-indicator">Opérationnel</span>
+                                </div>
+                                <p class="skill-desc">Suivi d'indicateurs de maintenance, calculs dimensionnels, tableaux croisés dynamiques et graphiques d'analyse.</p>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="file-text"></i>
+                                        <h4>Microsoft Word</h4>
+                                    </div>
+                                    <span class="level-indicator">Avancé</span>
+                                </div>
+                                <p class="skill-desc">Rédaction structurée de rapports de stage, cahiers des charges fonctionnels et documentation technique de maintenance.</p>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-top">
+                                    <div class="skill-name">
+                                        <i data-lucide="presentation"></i>
+                                        <h4>Microsoft PowerPoint</h4>
+                                    </div>
+                                    <span class="level-indicator">Avancé</span>
+                                </div>
+                                <p class="skill-desc">Présentation claire et synthétique de bilans techniques de projets et soutenances académiques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section (Stages Industriels) -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Parcours</span>
+                    <h2 class="section-title">Expériences Professionnelles</h2>
+                    <p class="section-desc">Immersion concrète au cœur d'environnements industriels exigeants.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Exp 1: Dräxlmaier -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i data-lucide="factory"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="company-badge">Secteur Automobile / Faisceaux</span>
+                                    <h3 class="role-title">Stagiaire – Service Maintenance</h3>
+                                    <h4 class="company-name">Dräxlmaier Group • Zaouiet Sousse, Tunisie</h4>
+                                </div>
+                                <div class="timeline-date">
+                                    <i data-lucide="calendar"></i> Juillet 2026
+                                </div>
+                            </div>
+
+                            <div class="timeline-body">
+                                <p class="timeline-intro">
+                                    Immersion au sein d'une multinationale leader dans la fabrication de systèmes électriques et composants pour l'industrie automobile haut de gamme.
+                                </p>
+                                <ul class="timeline-tasks">
+                                    <li>
+                                        <i data-lucide="check-circle-2"></i>
+                                        <span><strong>Observation et suivi des interventions :</strong> Participation active au suivi de la maintenance industrielle préventive et corrective sur des équipements automatisés de production.</span>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="check-circle-2"></i>
+                                        <span><strong>Recherche & Analyse des pannes :</strong> Travail d'analyse méthodique des causes racines des dysfonctionnements techniques rencontrés sur la chaîne.</span>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="check-circle-2"></i>
+                                        <span><strong>Collaboration & Sécurité :</strong> Travail quotidien avec les techniciens et ingénieurs de maintenance, dans le respect scrupuleux des normes de sécurité et de propreté industrielle.</span>
+                                    </li>
+                                </ul>
+
+                                <div class="timeline-techs">
+                                    <span>Maintenance Industrielle</span>
+                                    <span>Équipements Automatisés</span>
+                                    <span>Diagnostic de Pannes</span>
+                                    <span>Sécurité & 5S</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exp 2: Vége Moteur -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <i data-lucide="cog"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="company-badge">Rénovation & Composants Moteur</span>
+                                    <h3 class="role-title">Stagiaire – Service Production Turbo</h3>
+                                    <h4 class="company-name">Vége Moteur • Tunisie</h4>
+                                </div>
+                                <div class="timeline-date">
+                                    <i data-lucide="calendar"></i> Juillet 2025
+                                </div>
+                            </div>
+
+                            <div class="timeline-body">
+                                <p class="timeline-intro">
+                                    Stage d'immersion technique dans le secteur de la remise à neuf et de la production de turbocompresseurs automobiles.
+                                </p>
+                                <ul class="timeline-tasks">
+                                    <li>
+                                        <i data-lucide="check-circle-2"></i>
+                                        <span><strong>Découverte du process de fabrication :</strong> Analyse détaillée du cycle de vie, des machines d'équilibrage, de montage et d'essai des turbocompresseurs.</span>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="check-circle-2"></i>
+                                        <span><strong>Participation opérationnelle :</strong> Travail de recherche technique et réalisation de tâches pratiques au sein du poste de production.</span>
+                                    </li>
+                                    <li>
+                                        <i data-lucide="check-circle-2"></i>
+                                        <span><strong>Organisation industrielle :</strong> Sensibilisation à la gestion des flux, au contrôle qualité rigoureux et au travail d'équipe en atelier.</span>
+                                    </li>
+                                </ul>
+
+                                <div class="timeline-techs">
+                                    <span>Production Industrielle</span>
+                                    <span>Turbos & Équilibrage</span>
+                                    <span>Organisation Industrielle</span>
+                                    <span>Contrôle Qualité</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Projects Section -->
+        <section id="projects" class="section section-darker">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Réalisations</span>
+                    <h2 class="section-title">Projets Académiques & Personnels</h2>
+                    <p class="section-desc">Mise en pratique des connaissances en mécatronique, robotique et ingénierie mécanique.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-banner project-banner-cad">
+                            <i data-lucide="box" class="project-banner-icon"></i>
+                            <span class="project-category-badge">CAO & Mécanique</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Conception Mécanique 3D & Modélisation CAO</h3>
+                            <p class="project-desc">
+                                Modélisation de systèmes mécaniques complets sous <strong>SolidWorks</strong> (et découverte de <strong>CATIA</strong>) : conception de pièces, cinématique d'assemblage, vérification des interférences et génération des plans d'exécution normalisés.
+                            </p>
+                            <div class="project-skills">
+                                <span>SolidWorks CSWA</span>
+                                <span>Assemblage 3D</span>
+                                <span>Plans 2D</span>
+                                <span>CATIA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-banner project-banner-robotics">
+                            <i data-lucide="bot" class="project-banner-icon"></i>
+                            <span class="project-category-badge">Robotique & Électronique</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Mini-Projets en Mécatronique & Robotique</h3>
+                            <p class="project-desc">
+                                Développement de systèmes automatisés et petits robots programmés avec <strong>Arduino</strong>. Intégration de capteurs de détection (distance, ligne), de cartes de puissance et pilotage précis d'actionneurs électromécaniques.
+                            </p>
+                            <div class="project-skills">
+                                <span>Arduino</span>
+                                <span>Capteurs</span>
+                                <span>Moteurs CC / Servo</span>
+                                <span>C / C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-banner project-banner-maintenance">
+                            <i data-lucide="leaf" class="project-banner-icon"></i>
+                            <span class="project-category-badge">Maintenance & Écologie</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Projets Maintenance & Éco-Efficacité</h3>
+                            <p class="project-desc">
+                                Étude et élaboration de projets axés sur l'optimisation de la maintenance préventive et l'impact environnemental des installations industrielles, avec application des outils d'amélioration continue Lean.
+                            </p>
+                            <div class="project-skills">
+                                <span>Maintenance</span>
+                                <span>Lean Basic</span>
+                                <span>Environnement</span>
+                                <span>Analyse des flux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Diplômes & Certificats</span>
+                    <h2 class="section-title">Formation & Certifications</h2>
+                    <p class="section-desc">Mon parcours académique et mes certifications techniques reconnues.</p>
+                </div>
+
+                <div class="edu-grid">
+                    <!-- Academic Degree -->
+                    <div class="edu-column">
+                        <h3 class="column-header">
+                            <i data-lucide="graduation-cap"></i> Formation Universitaire
+                        </h3>
+
+                        <div class="edu-card">
+                            <span class="edu-year">En cours (3<sup>ème</sup> année)</span>
+                            <h4 class="edu-degree">Licence en Mécatronique Industrielle</h4>
+                            <h5 class="edu-school">ISSAT Sousse – Institut Supérieur des Sciences Appliquées et de Technologie de Sousse</h5>
+                            <p class="edu-text">
+                                Formation d'excellence pluridisciplinaire combinant le génie mécanique, le génie électrique, l'automatisme industriel et l'informatique industrielle.
+                            </p>
+                            <div class="edu-pills">
+                                <span>Mécatronique</span>
+                                <span>Conception CAO</span>
+                                <span>Automatisme</span>
+                                <span>Électronique</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="edu-column">
+                        <h3 class="column-header">
+                            <i data-lucide="award"></i> Certifications & Formations Spécialisées
+                        </h3>
+
+                        <div class="certif-cards-list">
+                            <div class="certif-item certif-gold">
+                                <div class="certif-icon"><i data-lucide="award"></i></div>
+                                <div class="certif-details">
+                                    <h4>CSWA – Certified SolidWorks Associate</h4>
+                                    <p>Certification officielle Dassault Systèmes validant les compétences en modélisation 3D, assemblages et dessin technique.</p>
+                                    <span class="certif-badge-tag">Conception Mécanique 3D</span>
+                                </div>
+                            </div>
+
+                            <div class="certif-item">
+                                <div class="certif-icon"><i data-lucide="sliders"></i></div>
+                                <div class="certif-details">
+                                    <h4>TIA Portal (Siemens) – Automatisme Industriel</h4>
+                                    <p>Formation certifiante à la programmation d'automates programmables industriels (API) et à la supervision.</p>
+                                    <span class="certif-badge-tag">Automatisme Siemens</span>
+                                </div>
+                            </div>
+
+                            <div class="certif-item">
+                                <div class="certif-icon"><i data-lucide="bot"></i></div>
+                                <div class="certif-details">
+                                    <h4>Robotique & Programmation Arduino</h4>
+                                    <p>Formation pratique sur les microcontrôleurs, l'interfaçage de capteurs/actionneurs et l'algorithmique embarquée.</p>
+                                    <span class="certif-badge-tag">Systèmes Embarqués</span>
+                                </div>
+                            </div>
+
+                            <div class="certif-item">
+                                <div class="certif-icon"><i data-lucide="check-square"></i></div>
+                                <div class="certif-details">
+                                    <h4>Lean Basic</h4>
+                                    <p>Formation aux fondamentaux du Lean Manufacturing, démarche 5S, management visuel et chasse aux gaspillages.</p>
+                                    <span class="certif-badge-tag">Excellence Opérationnelle</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-darker">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Me Joindre</span>
+                    <h2 class="section-title">Prenons Contact</h2>
+                    <p class="section-desc">Vous avez une opportunité de stage de fin d'études (PFE), un projet ou une collaboration industrielle ? Échangeons dès maintenant.</p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info -->
+                    <div class="contact-info-panel">
+                        <h3>Coordonnées Directes</h3>
+                        <p>N'hésitez pas à me joindre par téléphone ou par email pour toute demande d'informations ou d'entretien.</p>
+
+                        <div class="contact-details-list">
+                            <a href="mailto:nourbenjannet02@gmail.com" class="contact-channel">
+                                <div class="channel-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span class="channel-title">Email</span>
+                                    <span class="channel-val">nourbenjannet02@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+21654920085" class="contact-channel">
+                                <div class="channel-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <span class="channel-title">Téléphone</span>
+                                    <span class="channel-val">+216 54 920 085</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-channel">
+                                <div class="channel-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <span class="channel-title">Localisation</span>
+                                    <span class="channel-val">Sousse, Tunisie</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-channel">
+                                <div class="channel-icon"><i data-lucide="clock"></i></div>
+                                <div>
+                                    <span class="channel-title">Disponibilité</span>
+                                    <span class="channel-val">Immédiate pour Stages & Projets PFE</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-extra-actions">
+                            <button onclick="window.print()" class="btn btn-outline btn-block">
+                                <i data-lucide="file-down"></i> Télécharger / Imprimer la fiche CV
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Simulation / Mailto -->
+                    <div class="contact-form-panel">
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label for="senderName">Votre Nom / Entreprise</label>
+                                <input type="text" id="senderName" name="name" required placeholder="Ex: M. Dupont / Dräxlmaier Group">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senderEmail">Votre Adresse Email</label>
+                                <input type="email" id="senderEmail" name="email" required placeholder="nom@entreprise.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="messageSubject">Objet</label>
+                                <input type="text" id="messageSubject" name="subject" required placeholder="Ex: Opportunité de Stage PFE Mécatronique">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="messageBody">Message</label>
+                                <textarea id="messageBody" name="message" rows="5" required placeholder="Bonjour Nour, nous avons consulté votre portfolio et nous souhaitons échanger avec vous..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i data-lucide="send"></i> Envoyer le Message
+                            </button>
+                            <p id="formStatus" class="form-status-msg"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-brand">&lt;NBJ/&gt; Nour Ben Jannet</span>
+                <p>Étudiante en 3ème année de Licence en Mécatronique Industrielle – ISSAT Sousse</p>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2026 Nour Ben Jannet. Portfolio prêt pour GitHub Pages.</p>
+                <a href="#hero" class="back-to-top" aria-label="Retour en haut">
+                    <i data-lucide="arrow-up"></i> Haut de page
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
