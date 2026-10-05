@@ -372,8 +372,16 @@ button, input, textarea {
     font-size: 3.4rem;
     font-weight: 800;
     line-height: 1.15;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     letter-spacing: -0.5px;
+}
+
+.hero-specialty {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-light);
+    margin-bottom: 18px;
+    letter-spacing: -0.2px;
 }
 
 .hero-subtitle {
@@ -810,6 +818,7 @@ button, input, textarea {
 .cat-icon-green { background: rgba(16, 185, 129, 0.15); color: #10b981; }
 .cat-icon-purple { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; }
 .cat-icon-amber { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+.cat-icon-indigo { background: rgba(99, 102, 241, 0.15); color: #818cf8; }
 
 .category-title {
     font-size: 1.35rem;
